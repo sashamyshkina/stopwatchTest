@@ -13,6 +13,11 @@
 		B7AE245223EDE2270098E5BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AE245023EDE2270098E5BA /* Main.storyboard */; };
 		B7AE245423EDE22C0098E5BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7AE245323EDE22C0098E5BA /* Assets.xcassets */; };
 		B7AE245723EDE22C0098E5BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AE245523EDE22C0098E5BA /* LaunchScreen.storyboard */; };
+		B7AE246123EEA1D60098E5BA /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE246023EEA1D60098E5BA /* Timer.swift */; };
+		B7AE246323EEE3600098E5BA /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE246223EEE3600098E5BA /* DateExtension.swift */; };
+		B7AE246523EF202D0098E5BA /* LapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE246423EF202D0098E5BA /* LapCell.swift */; };
+		B7AE246723EF20590098E5BA /* LapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7AE246623EF20590098E5BA /* LapCell.xib */; };
+		B7AE246923EF327B0098E5BA /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE246823EF327B0098E5BA /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		B7AE245323EDE22C0098E5BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7AE245623EDE22C0098E5BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7AE245823EDE22C0098E5BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7AE246023EEA1D60098E5BA /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		B7AE246223EEE3600098E5BA /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		B7AE246423EF202D0098E5BA /* LapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapCell.swift; sourceTree = "<group>"; };
+		B7AE246623EF20590098E5BA /* LapCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LapCell.xib; sourceTree = "<group>"; };
+		B7AE246823EF327B0098E5BA /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +68,12 @@
 			children = (
 				B7AE244A23EDE2270098E5BA /* AppDelegate.swift */,
 				B7AE244C23EDE2270098E5BA /* SceneDelegate.swift */,
+				B7AE246223EEE3600098E5BA /* DateExtension.swift */,
 				B7AE244E23EDE2270098E5BA /* ViewController.swift */,
+				B7AE246823EF327B0098E5BA /* InfoViewController.swift */,
+				B7AE246023EEA1D60098E5BA /* Timer.swift */,
+				B7AE246423EF202D0098E5BA /* LapCell.swift */,
+				B7AE246623EF20590098E5BA /* LapCell.xib */,
 				B7AE245023EDE2270098E5BA /* Main.storyboard */,
 				B7AE245323EDE22C0098E5BA /* Assets.xcassets */,
 				B7AE245523EDE22C0098E5BA /* LaunchScreen.storyboard */,
@@ -126,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7AE245723EDE22C0098E5BA /* LaunchScreen.storyboard in Resources */,
+				B7AE246723EF20590098E5BA /* LapCell.xib in Resources */,
 				B7AE245423EDE22C0098E5BA /* Assets.xcassets in Resources */,
 				B7AE245223EDE2270098E5BA /* Main.storyboard in Resources */,
 			);
@@ -139,8 +155,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7AE244F23EDE2270098E5BA /* ViewController.swift in Sources */,
+				B7AE246323EEE3600098E5BA /* DateExtension.swift in Sources */,
 				B7AE244B23EDE2270098E5BA /* AppDelegate.swift in Sources */,
+				B7AE246923EF327B0098E5BA /* InfoViewController.swift in Sources */,
+				B7AE246523EF202D0098E5BA /* LapCell.swift in Sources */,
 				B7AE244D23EDE2270098E5BA /* SceneDelegate.swift in Sources */,
+				B7AE246123EEA1D60098E5BA /* Timer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LapCell" rowHeight="60" id="uue-wi-Upr" customClass="LapCell" customModule="TimerTestTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uue-wi-Upr" id="fGL-Tr-JNN">
+                <rect key="frame" x="0.0" y="0.0" width="317" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-MS-WJJ">
+                        <rect key="frame" x="30" y="15" width="19" height="30"/>
+                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="30"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvj-w2-CBD">
+                        <rect key="frame" x="74" y="18.5" width="79.5" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" red="0.1315755516669965" green="0.19419660850779955" blue="0.21843274111675126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="0XM-MS-WJJ" firstAttribute="centerY" secondItem="fGL-Tr-JNN" secondAttribute="centerY" id="Dgu-py-esy"/>
+                    <constraint firstItem="jvj-w2-CBD" firstAttribute="leading" secondItem="0XM-MS-WJJ" secondAttribute="trailing" constant="25" id="SVJ-TN-XCa"/>
+                    <constraint firstItem="0XM-MS-WJJ" firstAttribute="leading" secondItem="fGL-Tr-JNN" secondAttribute="leading" constant="30" id="oAb-At-sud"/>
+                    <constraint firstItem="jvj-w2-CBD" firstAttribute="centerY" secondItem="fGL-Tr-JNN" secondAttribute="centerY" id="wYH-FY-09D"/>
+                </constraints>
+                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <integer key="value" value="20"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="numberLabel" destination="0XM-MS-WJJ" id="IlO-o3-GQP"/>
+                <outlet property="timingLabel" destination="jvj-w2-CBD" id="aOb-O9-gTi"/>
+            </connections>
+            <point key="canvasLocation" x="-235.50724637681162" y="-226.00446428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
