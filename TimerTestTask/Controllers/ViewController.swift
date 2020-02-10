@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var timerList: UITableView!
     
-    var laps: [Int] = []
+    var laps: [Note] = []
     
     let defaults = UserDefaults.standard
     var alert = UIAlertController()
@@ -25,7 +25,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        laps = (defaults.array(forKey: "laps") as? [Int]) ?? []
+        let decoder = JSONDecoder()
+        
+        let data = defaults.data(forKey: "notes")
+        
+        if let data = defaults.data(forKey: "notes") {
+            laps = try! decoder.decode([Note].self, from: data)
+        } else {
+            laps = []
+        }
+        
 
         timerList.delegate = self
         timerList.dataSource = self
@@ -72,11 +81,20 @@ class ViewController: UIViewController {
     private func configureAlerts() {
         alert = UIAlertController(title: "New lap!", message: "Do you want to save it to your list?", preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "Save", style: .default) { alert in
-            self.laps.insert(self.time, at: 0)
+        alert.addTextField { (textField) in
+            textField.placeholder = "Put your note here..."
+        }
+
+        alert.addAction(UIAlertAction(title: "Save", style: .default) { _ in
+            let note = self.alert.textFields?.first?.text ?? ""
+            self.laps.insert(Note(time: self.time, text: note), at: 0)
+            self.alert.textFields?.first?.text = ""
             self.clearTime()
             self.timerList.reloadData()
-            self.defaults.set(self.laps, forKey: "laps")
+            
+            let encoder = JSONEncoder()
+
+            self.defaults.set(try! encoder.encode(self.laps), forKey: "notes")
         })
         
         alert.addAction(UIAlertAction(title: "Don't save", style: .cancel) { alert in
@@ -119,9 +137,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = timerList.dequeueReusableCell(withIdentifier: "LapCell", for: indexPath) as! LapCell
-        let totalTime = laps[indexPath.section]
-        cell.timingLabel.text = totalTime.stopWatchString()
-        cell.numberLabel.text = String(indexPath.section + 1)
+        let note = laps[indexPath.section]
+        cell.timingLabel.text = note.text
+        cell.numberLabel.text = note.time.stopWatchString()
         
         return cell
     }

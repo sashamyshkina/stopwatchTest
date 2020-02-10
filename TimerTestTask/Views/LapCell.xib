@@ -16,13 +16,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-MS-WJJ">
-                        <rect key="frame" x="30" y="15" width="19" height="30"/>
-                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="30"/>
+                        <rect key="frame" x="30" y="18.5" width="8.5" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvj-w2-CBD">
-                        <rect key="frame" x="74" y="18.5" width="79.5" height="23"/>
+                        <rect key="frame" x="63.5" y="18.5" width="79.5" height="23"/>
                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                         <color key="textColor" red="0.1315755516669965" green="0.19419660850779955" blue="0.21843274111675126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
@@ -32,6 +32,7 @@
                 <constraints>
                     <constraint firstItem="0XM-MS-WJJ" firstAttribute="centerY" secondItem="fGL-Tr-JNN" secondAttribute="centerY" id="Dgu-py-esy"/>
                     <constraint firstItem="jvj-w2-CBD" firstAttribute="leading" secondItem="0XM-MS-WJJ" secondAttribute="trailing" constant="25" id="SVJ-TN-XCa"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jvj-w2-CBD" secondAttribute="trailing" constant="20" id="iJx-ag-9qs"/>
                     <constraint firstItem="0XM-MS-WJJ" firstAttribute="leading" secondItem="fGL-Tr-JNN" secondAttribute="leading" constant="30" id="oAb-At-sud"/>
                     <constraint firstItem="jvj-w2-CBD" firstAttribute="centerY" secondItem="fGL-Tr-JNN" secondAttribute="centerY" id="wYH-FY-09D"/>
                 </constraints>

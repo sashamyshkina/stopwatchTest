@@ -10,6 +10,7 @@
 		B77344EB23F074830056523B /* InfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B77344EA23F074830056523B /* InfoVC.m */; };
 		B77344EE23F096C10056523B /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77344ED23F096C10056523B /* Stopwatch.swift */; };
 		B77344F023F17D950056523B /* StopwatchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77344EF23F17D950056523B /* StopwatchDelegate.swift */; };
+		B77344F623F1B06E0056523B /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77344F523F1B06E0056523B /* Note.swift */; };
 		B7AE244B23EDE2270098E5BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE244A23EDE2270098E5BA /* AppDelegate.swift */; };
 		B7AE244D23EDE2270098E5BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE244C23EDE2270098E5BA /* SceneDelegate.swift */; };
 		B7AE244F23EDE2270098E5BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE244E23EDE2270098E5BA /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 		B77344EC23F074CB0056523B /* InfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoVC.h; sourceTree = "<group>"; };
 		B77344ED23F096C10056523B /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		B77344EF23F17D950056523B /* StopwatchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchDelegate.swift; sourceTree = "<group>"; };
+		B77344F523F1B06E0056523B /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		B7AE244723EDE2270098E5BA /* TimerTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AE244A23EDE2270098E5BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7AE244C23EDE2270098E5BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				B77344EF23F17D950056523B /* StopwatchDelegate.swift */,
 				B77344ED23F096C10056523B /* Stopwatch.swift */,
+				B77344F523F1B06E0056523B /* Note.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				B7AE246323EEE3600098E5BA /* Date+NSStringExtension.swift in Sources */,
 				B7AE244B23EDE2270098E5BA /* AppDelegate.swift in Sources */,
 				B7AE246523EF202D0098E5BA /* LapCell.swift in Sources */,
+				B77344F623F1B06E0056523B /* Note.swift in Sources */,
 				B77344F023F17D950056523B /* StopwatchDelegate.swift in Sources */,
 				B7AE244D23EDE2270098E5BA /* SceneDelegate.swift in Sources */,
 				B77344EE23F096C10056523B /* Stopwatch.swift in Sources */,
