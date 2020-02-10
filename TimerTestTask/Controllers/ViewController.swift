@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        laps = defaults.array(forKey: "laps") as! [Int]
+        laps = (defaults.array(forKey: "laps") as? [Int]) ?? []
 
         timerList.delegate = self
         timerList.dataSource = self
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         timerList.register(UINib(nibName: "LapCell", bundle: nil), forCellReuseIdentifier: "LapCell")
 
         stopwatch.delegate = self
-        stopwatch.prepare()
+        stopwatch.prepare(setupDefaults: laps.isEmpty)
     }
     
     

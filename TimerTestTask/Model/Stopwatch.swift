@@ -57,7 +57,10 @@ class Stopwatch {
         delegate?.show(time: self.time)
     }
     
-    func prepare() {
+    func prepare(setupDefaults: Bool = false) {
+        if setupDefaults {
+            defaults.set(-1, forKey: "momentStarted")
+        }
         if self.isRunning {
             timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(timeDidFire), userInfo: nil, repeats: true)
         }
