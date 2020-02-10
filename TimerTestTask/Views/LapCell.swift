@@ -1,5 +1,5 @@
 //
-//  InfoViewController.swift
+//  LapCell.swift
 //  TimerTestTask
 //
 //  Created by Sasha Myshkina on 08.02.2020.
@@ -8,6 +8,9 @@
 
 import UIKit
 
-class InfoViewController: UIViewController {
+class LapCell: UITableViewCell {
     
+    @IBOutlet weak var numberLabel: UILabel!
+    @IBOutlet weak var timingLabel: UILabel!
+
 }

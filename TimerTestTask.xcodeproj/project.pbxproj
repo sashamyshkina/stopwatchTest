@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B77344EB23F074830056523B /* InfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B77344EA23F074830056523B /* InfoVC.m */; };
+		B77344EE23F096C10056523B /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77344ED23F096C10056523B /* Stopwatch.swift */; };
+		B77344F023F17D950056523B /* StopwatchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77344EF23F17D950056523B /* StopwatchDelegate.swift */; };
 		B7AE244B23EDE2270098E5BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE244A23EDE2270098E5BA /* AppDelegate.swift */; };
 		B7AE244D23EDE2270098E5BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE244C23EDE2270098E5BA /* SceneDelegate.swift */; };
 		B7AE244F23EDE2270098E5BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE244E23EDE2270098E5BA /* ViewController.swift */; };
 		B7AE245223EDE2270098E5BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AE245023EDE2270098E5BA /* Main.storyboard */; };
 		B7AE245423EDE22C0098E5BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7AE245323EDE22C0098E5BA /* Assets.xcassets */; };
 		B7AE245723EDE22C0098E5BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AE245523EDE22C0098E5BA /* LaunchScreen.storyboard */; };
-		B7AE246123EEA1D60098E5BA /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE246023EEA1D60098E5BA /* Timer.swift */; };
-		B7AE246323EEE3600098E5BA /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE246223EEE3600098E5BA /* DateExtension.swift */; };
+		B7AE246323EEE3600098E5BA /* Date+NSStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE246223EEE3600098E5BA /* Date+NSStringExtension.swift */; };
 		B7AE246523EF202D0098E5BA /* LapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE246423EF202D0098E5BA /* LapCell.swift */; };
 		B7AE246723EF20590098E5BA /* LapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7AE246623EF20590098E5BA /* LapCell.xib */; };
-		B7AE246923EF327B0098E5BA /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AE246823EF327B0098E5BA /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B77344E923F074830056523B /* TimerTestTask-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimerTestTask-Bridging-Header.h"; sourceTree = "<group>"; };
+		B77344EA23F074830056523B /* InfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoVC.m; sourceTree = "<group>"; };
+		B77344EC23F074CB0056523B /* InfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoVC.h; sourceTree = "<group>"; };
+		B77344ED23F096C10056523B /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		B77344EF23F17D950056523B /* StopwatchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchDelegate.swift; sourceTree = "<group>"; };
 		B7AE244723EDE2270098E5BA /* TimerTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7AE244A23EDE2270098E5BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7AE244C23EDE2270098E5BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,11 +35,9 @@
 		B7AE245323EDE22C0098E5BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7AE245623EDE22C0098E5BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7AE245823EDE22C0098E5BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7AE246023EEA1D60098E5BA /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
-		B7AE246223EEE3600098E5BA /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		B7AE246223EEE3600098E5BA /* Date+NSStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+NSStringExtension.swift"; sourceTree = "<group>"; };
 		B7AE246423EF202D0098E5BA /* LapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapCell.swift; sourceTree = "<group>"; };
 		B7AE246623EF20590098E5BA /* LapCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LapCell.xib; sourceTree = "<group>"; };
-		B7AE246823EF327B0098E5BA /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B77344F123F1893C0056523B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B77344EF23F17D950056523B /* StopwatchDelegate.swift */,
+				B77344ED23F096C10056523B /* Stopwatch.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B77344F223F189510056523B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B77344EC23F074CB0056523B /* InfoVC.h */,
+				B77344EA23F074830056523B /* InfoVC.m */,
+				B7AE244E23EDE2270098E5BA /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B77344F323F1895F0056523B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7AE245523EDE22C0098E5BA /* LaunchScreen.storyboard */,
+				B7AE245023EDE2270098E5BA /* Main.storyboard */,
+				B7AE246623EF20590098E5BA /* LapCell.xib */,
+				B7AE246423EF202D0098E5BA /* LapCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B77344F423F189890056523B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B7AE246223EEE3600098E5BA /* Date+NSStringExtension.swift */,
+				B7AE245323EDE22C0098E5BA /* Assets.xcassets */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		B7AE243E23EDE2270098E5BA = {
 			isa = PBXGroup;
 			children = (
@@ -68,16 +111,12 @@
 			children = (
 				B7AE244A23EDE2270098E5BA /* AppDelegate.swift */,
 				B7AE244C23EDE2270098E5BA /* SceneDelegate.swift */,
-				B7AE246223EEE3600098E5BA /* DateExtension.swift */,
-				B7AE244E23EDE2270098E5BA /* ViewController.swift */,
-				B7AE246823EF327B0098E5BA /* InfoViewController.swift */,
-				B7AE246023EEA1D60098E5BA /* Timer.swift */,
-				B7AE246423EF202D0098E5BA /* LapCell.swift */,
-				B7AE246623EF20590098E5BA /* LapCell.xib */,
-				B7AE245023EDE2270098E5BA /* Main.storyboard */,
-				B7AE245323EDE22C0098E5BA /* Assets.xcassets */,
-				B7AE245523EDE22C0098E5BA /* LaunchScreen.storyboard */,
+				B77344E923F074830056523B /* TimerTestTask-Bridging-Header.h */,
 				B7AE245823EDE22C0098E5BA /* Info.plist */,
+				B77344F223F189510056523B /* Controllers */,
+				B77344F123F1893C0056523B /* Model */,
+				B77344F323F1895F0056523B /* Views */,
+				B77344F423F189890056523B /* Utilities */,
 			);
 			path = TimerTestTask;
 			sourceTree = "<group>";
@@ -114,6 +153,7 @@
 				TargetAttributes = {
 					B7AE244623EDE2270098E5BA = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -154,13 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77344EB23F074830056523B /* InfoVC.m in Sources */,
 				B7AE244F23EDE2270098E5BA /* ViewController.swift in Sources */,
-				B7AE246323EEE3600098E5BA /* DateExtension.swift in Sources */,
+				B7AE246323EEE3600098E5BA /* Date+NSStringExtension.swift in Sources */,
 				B7AE244B23EDE2270098E5BA /* AppDelegate.swift in Sources */,
-				B7AE246923EF327B0098E5BA /* InfoViewController.swift in Sources */,
 				B7AE246523EF202D0098E5BA /* LapCell.swift in Sources */,
+				B77344F023F17D950056523B /* StopwatchDelegate.swift in Sources */,
 				B7AE244D23EDE2270098E5BA /* SceneDelegate.swift in Sources */,
-				B7AE246123EEA1D60098E5BA /* Timer.swift in Sources */,
+				B77344EE23F096C10056523B /* Stopwatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3BLD8S6NZS;
 				INFOPLIST_FILE = TimerTestTask/Info.plist;
@@ -313,6 +355,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myshkina.TimerTestTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TimerTestTask/TimerTestTask-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -322,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3BLD8S6NZS;
 				INFOPLIST_FILE = TimerTestTask/Info.plist;
@@ -331,6 +376,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myshkina.TimerTestTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TimerTestTask/TimerTestTask-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

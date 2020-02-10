@@ -36,12 +36,6 @@
                     <constraint firstItem="jvj-w2-CBD" firstAttribute="centerY" secondItem="fGL-Tr-JNN" secondAttribute="centerY" id="wYH-FY-09D"/>
                 </constraints>
                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                <userDefinedRuntimeAttributes>
-                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                        <integer key="value" value="20"/>
-                    </userDefinedRuntimeAttribute>
-                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                </userDefinedRuntimeAttributes>
             </tableViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
