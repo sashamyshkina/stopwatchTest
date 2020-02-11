@@ -12,6 +12,7 @@ import Foundation
 class Stopwatch {
     
     var defaults = UserDefaults.standard
+    static var defaultsDoubleNil: Double = -1
     
     var momentStarted: Date?
     var momentStopped: Date?
@@ -19,22 +20,20 @@ class Stopwatch {
     var timer = Timer()
     
     var isRunning: Bool {
-        return defaults.double(forKey: "momentStarted") != -1
+        return defaults.double(forKey: "momentStarted") != Stopwatch.defaultsDoubleNil
     }
         
     var delegate: StopwatchDelegate?
     
     func pause() {
         defaults.set(self.time, forKey: "timeCount")
-        defaults.set(-1, forKey: "momentStarted")
+        defaults.set(Stopwatch.defaultsDoubleNil, forKey: "momentStarted")
         timer.invalidate()
     }
     
     func start() {
         
-        let interval = defaults.double(forKey: "momentStarted")
-        
-        momentStarted = isRunning ? Date(timeIntervalSince1970: interval) : Date()
+        momentStarted = Date()
         
         defaults.set(momentStarted! - Date(timeIntervalSince1970: 0), forKey: "momentStarted")
         
@@ -46,7 +45,7 @@ class Stopwatch {
         let time = self.time
         
         defaults.set(0, forKey: "timeCount")
-        defaults.set(-1, forKey: "momentStarted")
+        defaults.set(Stopwatch.defaultsDoubleNil, forKey: "momentStarted")
         
         timer.invalidate()
         
@@ -59,7 +58,7 @@ class Stopwatch {
     
     func prepare(setupDefaults: Bool = false) {
         if setupDefaults {
-            defaults.set(-1, forKey: "momentStarted")
+            defaults.set(Stopwatch.defaultsDoubleNil, forKey: "momentStarted")
         }
         if self.isRunning {
             timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(timeDidFire), userInfo: nil, repeats: true)
@@ -71,7 +70,7 @@ class Stopwatch {
     var time: Int {
         var time = defaults.double(forKey: "timeCount")
         let interval = defaults.double(forKey: "momentStarted")
-        if (interval != -1) {
+        if (interval != Stopwatch.defaultsDoubleNil) {
             momentStarted = Date(timeIntervalSince1970: interval)
             time += (Date() - momentStarted!)
         }

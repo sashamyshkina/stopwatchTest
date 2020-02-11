@@ -27,15 +27,11 @@ class ViewController: UIViewController {
         
         let decoder = JSONDecoder()
         
-        let data = defaults.data(forKey: "notes")
-        
         if let data = defaults.data(forKey: "notes") {
             laps = try! decoder.decode([Note].self, from: data)
         } else {
             laps = []
         }
-        
-
         timerList.delegate = self
         timerList.dataSource = self
 
@@ -51,7 +47,9 @@ class ViewController: UIViewController {
     
     @objc func doubleTapped() {
         self.time = self.stopwatch.stop()
-        self.present(alert, animated: true)
+        if self.time > 0 {
+            self.present(alert, animated: true)
+        }
     }
     
     @objc func onceTapped() {
